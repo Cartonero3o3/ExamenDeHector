@@ -1,0 +1,14 @@
+extends Node
+var array = [0,0]
+var i = 0
+
+func SumaDeVectores(hectores):
+    while(i < hectores.size()):
+        array[0] += hectores[i].y
+        array[1] += hectores[i].x
+    	i+=1
+    return array
+
+func _ready():
+    print(SumaDeVectores([Vector2(16,3),Vector2(22,10),Vector2(4,56)]))
+    pass
