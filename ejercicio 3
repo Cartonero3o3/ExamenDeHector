@@ -1,0 +1,13 @@
+extends Node
+func f(x):
+    return ((x*2)-1)**2
+    
+func calcConF(array):
+    var valores = []
+    for calc in range(array.size()):
+        valores.append(f(array[calc]))
+    return valores
+            
+func _ready():
+    print(calcConF([120333, 1230, 12, 445, 7675]))
+    pass

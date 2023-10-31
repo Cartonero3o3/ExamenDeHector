@@ -1,0 +1,12 @@
+extends Node
+var sumTotal = 0
+
+func sumOdds(array):
+    for sum in range(array.size()):
+    	if array[sum] % 2 == 1:
+            sumTotal = sumTotal + array[sum]
+	return sumTotal
+
+func _ready():
+	print(sumOdds([1, 2, 4, 3, 5, 1]))
+    pass
