@@ -1,0 +1,18 @@
+extends Node
+var InventarioDeJulioLaArañaCesar = {
+	"name": "jhulius",
+    "surname": "Alvares",
+    "goals": 4,
+    "teams": ["polonia", "Croacia", "Croacia", "Australia"]
+}
+
+func AnadizeOneCrack(InventarioDeJulioLaArañaCesar):
+    for Inve in InventarioDeJulioLaArañaCesar:
+    	print(InventarioDeJulioLaArañaCesar[Inve])
+
+func _ready():
+    AnadizeOneCrack(InventarioDeJulioLaArañaCesar)
+    pass
+
+
+No me ah salido profe ;_; lo siento si lo decilucione xD
